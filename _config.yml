@@ -1,5 +1,5 @@
 # Site settings
-title: Anthony Pradal's CV 
+title: Anthony's CV 
 description: My Little CV
 baseurl: 
 url: http://fen0l.github.io
@@ -48,9 +48,9 @@ author:
   gavatar: /resumecard/assets/img/avatar.JPG
   aboutme:
     - about1: 
-      content: My name is Anthony Pradal, I am 20 years old and was born in Pau. I am currently studying IT at the CESI EXIA Pau and I am about to complete my first engineering year. Since my childhood, I am also passionate about computers and new technologies. I am curious, attentive and rigorous. At 12, I was interested in HTML and CSS programming. According to this, I have worked in various projects in order to improve my kills and discover new languages. Then, I decided to focus on Java and PHP languages. And now, I get more interested by scripting languages. Since a year, I am using Python for various projects. 
+      content: My name is Anthony Pradal, I am 20 years old and was born in Pau. I am currently studying IT at the CESI EXIA Pau and I am about to complete my first engineering year. Since my childhood, I am also passionate about computers and new technologies. I am curious, attentive and rigorous. At 12, I was interested in HTML and CSS programming. According to this, I have worked in various projects in order to improve my skills and discover new languages. Then, I decided to focus on Java and PHP languages. And now, I get more interested by scripting languages. Since a year, I am using Python for various projects. 
     - about3: 
-      content: Nowadays, I am creating an open database referencing all IPv4 including there specifications. With this new idea, I can improve many of my skills. IT actually became a true passion for me. Indeed, I decided to integrate an IT school in 2013, CESI EXiA. After my frist two years as CPGE, I deciced to integrate the engineering course.
+      content: Nowadays, I am creating an open database referencing all IPv4 including theire specifications. With this new idea, I can improve many of my skills. IT actually became a true passion for me. Indeed, I decided to integrate an IT school in 2013, CESI EXiA. After my frist two years as CPGE, I deciced to integrate the engineering course.
 
   workHistory:
     - work1:
@@ -67,7 +67,7 @@ author:
       title: Internship
       started: 2015
       duration: (May - July)
-      description: During this intership, I learnt a lot of differents things. I started with a website building for an hotel connected to a Xivo server. After that, I had to establish a captive portal including a website managing user connexion for differents clients. Finaly, I started a post-creation script writing in order to manage virtual machines (vmware, proxmox and citrix). 
+      description: During this intership, I learnt a lot of differents things. I started by building a website for an hotel connected to a Xivo server. After that, I had to establish a captive portal including a website managing user connexion for differents clients. Finaly, I started a post-creation script writing in order to manage virtual machines (vmware, proxmox and citrix). 
       tech: HTML, CSS, PHP, SQL, PYTHON - VMWARE, VSPHERE, PFSENSE, ZEROSHELL
     - work3:
       company: 2EI-Industries
@@ -75,7 +75,7 @@ author:
       title: Internship
       started: 2014
       duration: (September - December)
-      description: Creation of a responsive website providing tools for customers and employees of 2EI Industry to manage securely hydraulic power. 
+      description: Creation of a responsive website providing tools for customers and employees of 2EI Industry to manage securely hydraulic power plan. 
       tech: HTML, CSS, JS, PHP, SQL, CGI
 
   educationHistory:
