@@ -1,0 +1,139 @@
+# Site settings
+title: Anthony Pradal's CV 
+description: My Little CV
+favicon: /assets/img/favicon.ico
+baseurl: 
+url: 
+rss_url: /pages/atom.xml
+
+
+# Référencement Tools
+ref:
+  meta:
+    - meta1:
+      name: keywords
+      content: developer, it, engineer, php, network, cisco, cloud, html, golang, python
+    - meta2:
+      name: Description
+      content: Hi, im Anthony Pradal. You can check my CV here.
+    - meta3:
+      name: author
+      content: Anthony Pradal
+    - meta4:
+      name: identifier-url
+      content: localhost
+    - meta5:
+      name: reply-to
+      content: hello@anthonypradal.com
+
+
+#Footer google map settings
+googlemap:
+  city: Billere
+  apikey: a
+
+# Build settings
+markdown: kramdown
+
+exclude: [vendor]
+
+# Author settings
+author:
+  name: Anthony Pradal
+  title: IT Student Engineer
+  address: Billère, France
+  email: hello@anthonypradal.com
+  link: http://anthonypradal.com
+  github: Fen0l
+  linkedin: anthonypradal
+  twitter: jokersql
+  gavatar: /resumecard/assets/img/avatar.JPG
+  aboutme:
+    - about1: 
+      content: My name is Anthony Pradal, I am 20 years old and was born in Pau. I am currently studying IT at the CESI EXIA Pau and I am about to complete my first engineering year. Since my childhood, I am also passionate about computers and new technologies. I am curious, attentive and rigorous. At 12, I was interested in HTML and CSS programming. According to this, I have worked in various projects in order to improve my kills and discover new languages. Then, I decided to focus on Java and PHP languages. And now, I get more interested by scripting languages. Since a year, I am using Python for various projects. 
+    - about3: 
+      content: Nowadays, I am creating an open database referencing all IPv4 including there specifications. With this new idea, I can improve many of my skills. IT actually became a true passion for me. Indeed, I decided to integrate an IT school in 2013, CESI EXiA. After my frist two years as CPGE, I deciced to integrate the engineering course.
+
+  workHistory:
+    - work1:
+      company: 2EI-Industries
+      location: Tarascon sur Ariège, France
+      title: Internship
+      started: 2016
+      duration: (February - Present)
+      description: 
+      tech: Windows Server 2008, Active Directory, DHCP Server
+    - work2:
+      company: Visionweb
+      location: Saint Pierre d'Oléron, France
+      title: Internship
+      started: 2015
+      duration: (May - July)
+      description: During this intership, I learnt a lot of differents things. I started with a website building for an hotel connected to a Xivo server. After that, I had to establish a captive portal including a website managing user connexion for differents clients. Finaly, I started a post-creation script writing in order to manage virtual machines (vmware, proxmox and citrix). 
+      tech: HTML, CSS, PHP, SQL, PYTHON - VMWARE, VSPHERE, PFSENSE, ZEROSHELL
+    - work3:
+      company: 2EI-Industries
+      location: Tarascon sur Ariège, France
+      title: Internship
+      started: 2014
+      duration: (September - December)
+      description: Creation of a responsive website providing tools for customers and employees of 2EI Industry to manage securely hydraulic power. 
+      tech: HTML, CSS, JS, PHP, SQL, CGI
+
+  educationHistory:
+    - education1:
+      organization: CESI EXIA FRANCE
+      degree: IT Engineering
+      major: Network Engineering
+      started: 2015
+      duration: (2015 - 2018)
+      description: 
+    - education2:
+      organization: CESI EXIA FRANCE
+      degree: IT Prepa
+      major: Analyst Programmer
+      started: 2013
+      duration: (2013 - 2015)
+      description: 
+    - education3:
+      organization: LYCÉE SAINT-CRICQ FRANCE
+      degree: A Levels
+      major: 
+      started: 2010
+      duration: (2010 - 2013)
+      description: 
+
+  languages:
+    - language1:
+      name: French
+      proficiency: Native
+    - language2:
+      name: English
+      proficiency: Technical
+    - language3:
+      name: Russian
+      proficiency: Begginer
+  skillscontent: These skills are the achievement of hardworking. I try to improve them everyday and they represent something I'm proud of. I chose to integrate Commerce and Management skill to this list because it is a required skill in order to accomplish my professional goal, building my own business.
+
+  programmingSkills:
+    - skill1:
+      name: HTML
+      percentage: 100%
+    - skill2:
+      name: Python (Autodidact)
+      percentage: 80%
+    - skill3:
+      name: Network (Routing & Switching)
+      percentage: 70%
+    - skill4:
+      name: Java/C
+      percentage: 60%
+    - skill5:
+      name: CSS/JS
+      percentage: 50%
+    - skill6:
+      name: Golang (Autodidact)
+      percentage: 20%
+    - skill7:
+      name: Commerce/Management
+      percentage: 10%
