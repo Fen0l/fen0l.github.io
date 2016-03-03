@@ -1,10 +1,8 @@
 # Site settings
 title: Anthony Pradal's CV 
 description: My Little CV
-favicon: /assets/img/favicon.ico
 baseurl: 
-url: 
-rss_url: /pages/atom.xml
+url: http://fen0l.github.io
 
 
 # Référencement Tools
