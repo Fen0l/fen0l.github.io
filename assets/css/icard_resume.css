@@ -63,7 +63,7 @@ hr {
 
 .header img {
     float: left;
-    height: 85px;
+    height: 100px;
     margin-right: 15px;
     padding: 11px;
 }
@@ -169,6 +169,7 @@ hr {
 
 .timeline > li > .timeline-panel {
     float: left;
+    width: 100%;
     border: 1px solid #d4d4d4;
     border-radius: 2px;
     padding: 20px;

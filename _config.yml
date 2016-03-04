@@ -28,7 +28,7 @@ ref:
 #Footer google map settings
 googlemap:
   city: Billere
-  apikey: a
+  apikey: AIzaSyCVvuncorGe5oUSGmn-e0nIBsbAjIihVqA
 
 # Build settings
 markdown: kramdown
@@ -42,10 +42,12 @@ author:
   address: Billère, France
   email: hello@anthonypradal.com
   link: http://anthonypradal.com
+  number: +33 699 291 448
   github: Fen0l
   linkedin: anthonypradal
   twitter: jokersql
   gavatar: /resumecard/assets/img/avatar.JPG
+  ghblog: fen0l.github.io/blog
   aboutme:
     - about1: 
       content: My name is Anthony Pradal, I am 20 years old and was born in Pau. I am currently studying IT at the CESI EXIA Pau and I am about to complete my first engineering year. Since my childhood, I am also passionate about computers and new technologies. I am curious, attentive and rigorous. At 12, I was interested in HTML and CSS programming. According to this, I have worked in various projects in order to improve my skills and discover new languages. Then, I decided to focus on Java and PHP languages. And now, I get more interested by scripting languages. Since a year, I am using Python for various projects. 
