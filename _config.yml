@@ -2,7 +2,18 @@
 title: Anthony's CV 
 description: My Little CV
 baseurl: 
-url: http://fen0l.github.io
+url: https://fen0l.github.io
+disqus_shortname: "fenolsblog"
+
+gems: [jekyll-paginate]
+permalink: /:day-:month-:year/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+paginate: 5
+paginate_path: ":num"
 
 
 # Référencement Tools
@@ -46,7 +57,6 @@ author:
   github: Fen0l
   linkedin: anthonypradal
   twitter: jokersql
-  gavatar: /resumecard/assets/img/avatar.JPG
   ghblog: fen0l.github.io/blog
   aboutme:
     - about1: 
