@@ -1,0 +1,97 @@
+---
+layout: default
+title: Category
+permalink: /category/
+---
+<div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                &nbsp;Categories
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropnav">
+                <li>
+                    <a href="javascript:void(0);" class="categories-item" cate="All">
+                        All&nbsp;<span class="categories-direct"> {{site.posts | size}}</span>
+                    </a>
+                </li>
+                {% for category in site.categories %}
+                    <li>
+                        <a href="javascript:void(0);" class="categories-item" cate="{{ category | first }}">
+                            {{ category | first }}&nbsp;<span class="categories-direct">{{ category | last | size }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <section class="category-slice" post-cate="All">
+                {% for post in site.posts %}
+                    <div class="timeline-panel grid-block">
+                        <article>
+                            <header>
+                                <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+                                    {{ post.title }}
+                                </a>
+                            </header>
+
+                            <hr>
+                            <p>{{ post.description | strip_html | strip_newlines }}</p>
+                            <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More</a>
+
+                            <footer>
+                                {% for tag in post.tags %}
+                                <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;{{ tag }}</a>
+                                {% endfor %}
+                                <span class="word-keep pull-right">
+                                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-comment">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;Comment</a>
+                                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-share">
+                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>&nbsp;Share</a>
+                                </span>
+                            </footer>
+                        </article>
+                    </div>
+                {% endfor %}
+            </section>
+
+
+            {% for category in site.categories %}
+                <section class="category-slice" post-cate="{{category | first}}">
+                    {% for posts in category  %}
+                        {% for post in posts %}
+                            {% if post.url %}
+                                <div class="timeline-panel grid-block">
+                                    <article>
+                                        <header>
+                                            <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+                                                {{ post.title }}
+                                            </a>
+                                        </header>
+
+                                        <hr>
+                                        <p>{{ post.description | strip_html | strip_newlines }}</p>
+                                        <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More</a>
+
+                                        <footer>
+                                            {% for tag in post.tags %}
+                                            <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;{{ tag }}</a>
+                                            {% endfor %}
+                                            <span class="word-keep pull-right">
+                                                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-comment">
+                                                    <i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;Comment</a>
+                                                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-share">
+                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>&nbsp;Share</a>
+                                            </span>
+                                        </footer>
+                                    </article>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </section>
+            {% endfor %}
+        </div>
+    </div>
+</div>

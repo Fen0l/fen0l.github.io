@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="timeline-panel grid-block">
+                                    {{ content }}
+                                </div>
+                                <div id="post-share">
+                                    Share this on &rarr;
+
+                                    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                        Twitter
+                                    </a>
+
+                                    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                        Facebook
+                                    </a>
+
+                                    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
+                                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                        Google+
+                                    </a>
+                                </div>
+                                <div id="post-comment">
+                                    <div id="disqus_thread"></div>
+                                </div>
+
+                                <script>
+                                    var disqus_shortname = '{{site.disqus_shortname}}';
+                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    document.getElementsByTagName("script")[0].parentNode.appendChild(dsq);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% include footer.html %}
+    </body>
+</html>
