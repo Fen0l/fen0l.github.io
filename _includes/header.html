@@ -1,66 +1,24 @@
-<div class="header">
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-xs-6 col-sm-3">
-                <img src="/assets/img/avatar.png" title="Avatar" alt="Anthony Pradal">
-                <h4>{{ site.author.name }}</h4>
-                <p>{{ site.author.title }}</p>
-
-                {% if site.author.number %}
-                    <p>{{ site.author.number }}</p>
-                {% endif %}
-
-            </div>
-
-            <div class="col-xs-6 col-sm-3">
-                <p></p>
-                <p>
-                    <i class="fa fa-envelope-o fa-fw"></i>
-                    {{ site.author.email }}
-                </p>
-                <p>
-                    <i class="fa fa-github fa-fw"></i>
-                    <a href="https://github.com/{{ site.author.github }}" target="_blank">
-                      @{{ site.author.github }}
-                    </a> |
-                    <i class="fa fa-twitter fa-fw"></i>
-                    <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
-                        @{{ site.author.twitter }}
-                    </a>
-                </p>
-                <p>
-                    <i class="fa fa-linkedin-square fa-fw"></i>
-                    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
-                        linkedin.com/in/{{ site.author.linkedin }}
-                    </a>
-                </p> 
-            </div>
-            <div class="col-xs-6 col-sm-3 col-sm-3 col-sm-offset-3">
-                <p><br></p>
-                <a href="{{ site.baseurl | prepend: site.url }}/" class="btn btn-dark">
-                    <i class="icon-file icon-white"></i>
-                    My Posts
-                </a>
-                {% if page.url == "/about/" %}
-               <a href="{{ site.baseurl | prepend: site.url }}" class="btn btn-dark">
-                    <i class="icon-file icon-white"></i>
-                    CV.pdf
-                </a>
-                <a href="{{ site.baseurl | prepend: site.url }}" class="btn btn-dark">
-                    <i class="icon-file icon-white"></i>
-                    My Blog
-                </a>
-                {% else %}
-                <a href="{{ site.baseurl | prepend: site.url }}/category/#All" class="btn btn-dark">
-                    <i class="icon-file icon-white"></i>
-                    Categories
-                </a>
-                <a href="{{ site.baseurl | prepend: site.url }}/about" class="btn btn-dark">
-                    <i class="icon-file icon-white"></i>
-                    About Me
-                </a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</div>
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="{{ site.baseurl }}/" class="logo">
+      {% if site.logo %}
+      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+      {% else %}
+      <span>{{ site.title }}</span>
+      {% endif %}
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        {% for page in site.pages %}
+          {% if page.title and page.main_nav != false %}
+          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+        <li class="nav-link"><a href="https://anthonypradal.com">About</a>
+      </ul>
+    </nav>
+  </div>
+</header>
