@@ -16,7 +16,7 @@ description: >
   My blog. Do you live it ?
 
 # root of your server.
-baseurl: "/"
+baseurl: ""
 url: "https://fen0l.github.io"
 cover: "/assets/banner/header_image.jpg"
 logo: "/assets/logo.png"
