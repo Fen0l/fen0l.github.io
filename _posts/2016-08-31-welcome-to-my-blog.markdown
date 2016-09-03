@@ -28,8 +28,8 @@ You can contact me at hello@anthonypradal.com I will reply with pleasure.
 
 To finish, this is a goat.
 
-<a href="http://127.0.0.1:4000/blog/assets/goat.jpg" data-lightbox="falcon9-large" data-title="This is a funny goat">
-  <img src="http://127.0.0.1:4000/blog/assets/goat.jpg" style="height:50%;width:50%;" title="This is a funny goat">
+<a href="https://fen0l.github.io/assets/goat.jpg" data-lightbox="falcon9-large" data-title="This is a funny goat">
+  <img src="https://fen0l.github.io/assets/goat.jpg" style="height:50%;width:50%;" title="This is a funny goat">
 </a>
 
 
