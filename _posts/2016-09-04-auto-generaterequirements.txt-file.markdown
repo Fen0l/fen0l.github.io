@@ -12,20 +12,20 @@ cover:  "/assets/banner/python.png"
 
 
 Usually, a requirement file is just a list of pip install arguments. You can also specify a match version for each. Theses files can be easy install with the [pip app][pip] `pip install -r requirements.txt`. A simple requirement file looks like:
-```html
+{% highlight bash %}
 ovh==0.4.5
 requests==2.11.1
 tornado==4.4.1
-```
+{% endhighlight %}
 
 But for a developper, how can we generate it ? I ask me that question when I push on github my last project [ExAlias][exalias]. I figure that you have many solutions to do this.
 
 ## 1. Directly with pip
 
 With this solution, the requirement file will contains a pinned version of everything used in the project who has been installed with pip.
-```
+{% highlight bash %}
 $ pip freeze > requirements.txt
-```
+{% endhighlight %}
 
 ## 2. Using a third tool
 
@@ -41,19 +41,21 @@ For 3 reasons
 ### how to use it
 
 First of all, you have to install it.
-```
+{% highlight bash %}
 $ pip install pipreqs
-```
+{% endhighlight %}
 or
-```
+{% highlight bash %}
 $ git clone https://github.com/bndr/pipreqs.git
 $ python pipreqs/setup.py install
-```
+{% endhighlight %}
+
 
 After that, the only thing to do is:
-```
+{% highlight bash %}
 pipreqs Documents/project/exalias
-```
+{% endhighlight %}
+
 
 
 
