@@ -34,6 +34,7 @@ The second method, (that I used) is called [pipreqs][pipreqs]. A pip requirement
 ### Why using it
 
 For 3 reasons
+
 * `pip freeze` only saves the packages that are installed with pip install in your environment.
 * pip freeze saves all packages in the environment including those that you don't use in your current project. (if you don't have virtualenv)
 * and sometimes you just need to create requirements.txt for a new project without installing modules.
