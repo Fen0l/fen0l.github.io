@@ -48,9 +48,9 @@ $ pip install pipreqs
 or
 {% highlight bash %}
 $ git clone https://github.com/bndr/pipreqs.git
-$ python pipreqs/setup.py install
+$ cd pipreqs
+$ python3 setup.py install
 {% endhighlight %}
-
 
 After that, the only thing to do is:
 {% highlight bash %}
