@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nutanix Guest Tools: Overview, Importance, and Implementation"
-date: 2024-06-21 09:00:00
+date: 2024-06-20 09:00:00
 author: Anthony
 categories: Nutanix
 tags: Nutanix Guest-Tools VM-Management
