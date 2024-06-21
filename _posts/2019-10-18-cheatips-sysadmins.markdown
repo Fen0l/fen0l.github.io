@@ -11,7 +11,7 @@ tags:	sysadmin automation
 
 ## Monitoring
 
-Easy way to monitor servers connectivity during large maintenance
+An easy way to monitor server connectivity during large maintenance operations.
 
 {% highlight powershell %}
 "[MIGRATION] Alive Network Configuration Check"

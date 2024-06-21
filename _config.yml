@@ -10,10 +10,10 @@ exclude:
 # Site settings
 title: Fen0l
 subtitle: "Discovering, Tips & Tricks and HowTo"
-email: hello@anthonypradal.com
+email: hello@a-pradal.com
 name: Anthony Pradal
 description: >
-  My blog. Do you live it ?
+  My blog. Do you like it ?
 
 # root of your server.
 baseurl: ""
@@ -58,7 +58,7 @@ social:
     username: JokerSql
     url: https://twitter.com/JokerSql
     desc: Follow me on Twitter
-    share: true
+    share: false
 
   - name: Facebook
     icon: facebook
