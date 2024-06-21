@@ -50,9 +50,9 @@ You can set up connectivity between the controller virtual machine (CVM) and the
 
 [More on IP-based Communication](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_1:man-nutanix-guest-tool-nga-vm-communication-r.html)
 
-![Guest-Tools-Service-CVM](image-1.png)
+![Guest-Tools-Service-CVM](/assets/nutanix/guest-tools-services.png)
 
-![Guest-Tools-Agents](image-2.png)
+![Guest-Tools-Agents](/assets/nutanix/guest-tools-agent.png)
 
 #### Implementation of Nutanix Guest Tools
 
